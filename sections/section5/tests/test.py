@@ -3,8 +3,7 @@ from code.my_calculations import Calculations
 
 class TestCalculations(unittest.TestCase):
 
-    @classmethod
-    def setUpClass(self):
+    def setUp(self):
         self.calculation = Calculations(8, 2)
 
     def test_sum(self):
